@@ -169,7 +169,7 @@ let eventWriteHandler=(eventWriteKeyPress)=>{
     }
     firstKeyPressOver=true
     shiftPressed=eventWriteKeyPress.shiftKey
-    if(!shiftPressed && eventWriteKeyPress.key=="Enter"){
+    if(!shiftPressed && eventWriteKeyPress.keyCode==13){
         for(let i=0;i<modalFilters.length;i++){
             if(modalFilters[i].classList[2]=="active-modal-filter"){
                 activeModalFilterColor=modalFilters[i].classList[1]
